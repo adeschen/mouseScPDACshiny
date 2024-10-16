@@ -1,0 +1,61 @@
+---
+title: "Dot plot for mouse single-cell KPC from Elyada et al 2019"
+author: Astrid Deschênes, Pascal Belleau and David A. Tuveson
+output:
+    BiocStyle::html_document:
+        number_sections: no
+        toc: true
+    pkgdown:
+        number_sections: no
+        as_is: true
+urlcolor: darkred
+linkcolor: darkred
+bibliography: mouseKPCscElyada2019shiny.bibtex
+vignette: >
+    %\VignetteIndexEntry{Dot plot for mouse single-cell KPC from Elyada et al 2019}
+    %\VignettePackage{mouseKPCscElyada2019shiny}
+    %\VignetteEngine{knitr::rmarkdown}
+    %\VignetteEncoding{UTF-8}
+---
+
+```{r style, echo=FALSE, results='hide', warning=FALSE, message=FALSE}
+BiocStyle::markdown()
+
+suppressPackageStartupMessages({
+    library(knitr)
+    library(mouseKPCscElyada2019shiny)
+})
+
+set.seed(121)
+```
+
+<br />
+
+**Package**: `r Rpackage("mouseKPCscElyada2019shiny")`<br />
+**Authors**: `r packageDescription("mouseKPCscElyada2019shiny")[["Author"]]`<br />
+**Version**: `r packageDescription("mouseKPCscElyada2019shiny")$Version`<br />
+**Compiled date**: `r Sys.Date()`<br />
+**License**: `r packageDescription("mouseKPCscElyada2019shiny")[["License"]]`<br />
+
+
+
+
+<br>
+<br>
+
+
+
+# Session info
+
+Here is the output of `sessionInfo()` in the environment in which this 
+document was compiled:
+
+```{r sessionInfo, echo=FALSE}
+sessionInfo()
+```
+
+<br>
+<br>
+
+
+# References

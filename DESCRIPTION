@@ -1,0 +1,42 @@
+Package: mouseScPDACshiny
+Version: 0.99.0
+Date: 2024-08-21
+Type: Package
+Title: Dot plot for mouse single-cell KPC from Elyada et al 2019
+Description: This package provides a graphical user interface (GUI) to generate 
+    a dot plot. More specifically, the dot plot shows the mean expression 
+    and ratio of cell expressing  
+    genes selected by user. The data comes from Elyada et al 2019 mouse KPC 
+    single-cell dataset. 
+Authors@R: c(person("Astrid", "Deschênes", email = "adeschen@hotmail.com",
+    role=c("aut", "cre"), comment=c(ORCID = "0000-0001-7846-6749")), 
+    person("Pascal", "Belleau", email = "pascal_belleau@hotmail.com",
+    role=c("aut"), comment = c(ORCID = "0000-0002-0802-1071")), 
+    person(given="David A.", family="Tuveson",
+    email="dtuveson@cshl.edu", 
+    role=c("aut"), comment=c(ORCID="0000-0002-8017-2712")))
+Depends:
+  R (>= 4.0),
+  shiny,
+  shinythemes
+Imports: 
+  ggplot2,
+  stringr,
+  SummarizedExperiment,
+  htmltools,
+  reshape2,
+  rlang,
+  bslib,
+  shinyjs
+Suggests:
+  BiocStyle,
+  knitr,
+  rmarkdown
+License: Artistic-2.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression:xz
+biocViews: ShinyApps
+RoxygenNote: 7.3.2
